@@ -27,6 +27,8 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND ownHeader_sources
     append_header_bb_impl.cc
+    parse_header_b_impl.cc
+    generate_header_bb_impl.cc
 )
 
 set(ownHeader_sources "${ownHeader_sources}" PARENT_SCOPE)

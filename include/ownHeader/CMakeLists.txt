@@ -22,5 +22,7 @@
 ########################################################################
 install(FILES
     api.h
-    append_header_bb.h DESTINATION include/ownHeader
+    append_header_bb.h
+    parse_header_b.h
+    generate_header_bb.h DESTINATION include/ownHeader
 )

@@ -18,5 +18,7 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    ownHeader_append_header_bb.xml DESTINATION share/gnuradio/grc/blocks
+    ownHeader_append_header_bb.xml
+    ownHeader_parse_header_b.xml
+    ownHeader_generate_header_bb.xml DESTINATION share/gnuradio/grc/blocks
 )
