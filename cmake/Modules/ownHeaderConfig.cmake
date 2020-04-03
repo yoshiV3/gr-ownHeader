@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_OWNHEADER ownHeader)
+
+FIND_PATH(
+    OWNHEADER_INCLUDE_DIRS
+    NAMES ownHeader/api.h
+    HINTS $ENV{OWNHEADER_DIR}/include
+        ${PC_OWNHEADER_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    OWNHEADER_LIBRARIES
+    NAMES gnuradio-ownHeader
+    HINTS $ENV{OWNHEADER_DIR}/lib
+        ${PC_OWNHEADER_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(OWNHEADER DEFAULT_MSG OWNHEADER_LIBRARIES OWNHEADER_INCLUDE_DIRS)
+MARK_AS_ADVANCED(OWNHEADER_LIBRARIES OWNHEADER_INCLUDE_DIRS)
+

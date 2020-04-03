@@ -1,0 +1,23 @@
+Start testing: Apr 03 03:38 CEST
+----------------------------------------------------------
+2/2 Testing: qa_append_header_bb
+2/2 Test: qa_append_header_bb
+Command: "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_append_header_bb_test.sh"
+Directory: /home/yoshi/gr-ownHeader/build/python
+"qa_append_header_bb" start time: Apr 03 03:38 CEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Passed.
+"qa_append_header_bb" end time: Apr 03 03:38 CEST
+"qa_append_header_bb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 03 03:38 CEST

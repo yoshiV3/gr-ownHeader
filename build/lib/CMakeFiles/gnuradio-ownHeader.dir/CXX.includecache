@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ownHeader/api.h
+gnuradio/attributes.h
+-
+
+../include/ownHeader/append_header_bb.h
+ownHeader/api.h
+-
+gnuradio/tagged_stream_block.h
+-
+gnuradio/block.h
+-
+
+/home/yoshi/gr-ownHeader/lib/append_header_bb_impl.cc
+config.h
+/home/yoshi/gr-ownHeader/lib/config.h
+gnuradio/io_signature.h
+-
+string
+-
+vector
+-
+append_header_bb_impl.h
+/home/yoshi/gr-ownHeader/lib/append_header_bb_impl.h
+pmt/pmt.h
+/home/yoshi/gr-ownHeader/lib/pmt/pmt.h
+
+/home/yoshi/gr-ownHeader/lib/append_header_bb_impl.h
+ownHeader/append_header_bb.h
+-
+

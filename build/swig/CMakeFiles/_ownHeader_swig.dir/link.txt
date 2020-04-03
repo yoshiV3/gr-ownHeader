@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared  -o _ownHeader_swig.so CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o -Wl,-rpath,/home/yoshi/gr-ownHeader/build/lib: -lpython2.7 ../lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0 -lboost_filesystem -lboost_system -lgnuradio-runtime -lgnuradio-pmt -llog4cpp 

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yoshi/gr-ownHeader/lib/qa_ownHeader.cc
+qa_ownHeader.h
+/home/yoshi/gr-ownHeader/lib/qa_ownHeader.h
+
+/home/yoshi/gr-ownHeader/lib/qa_ownHeader.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/yoshi/gr-ownHeader/lib/test_ownHeader.cc
+config.h
+/home/yoshi/gr-ownHeader/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_ownHeader.h
+/home/yoshi/gr-ownHeader/lib/qa_ownHeader.h
+iostream
+-
+fstream
+-
+
