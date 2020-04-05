@@ -38,6 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/yoshi/gr-ownHeader/grc/ownHeader_append_header_bb.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_append_header_bb.xml"
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_generate_header_bb.xml"
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_parse_header_bb.xml"
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_send_to_multiplexer_b.xml"
+    )
 endif()
 

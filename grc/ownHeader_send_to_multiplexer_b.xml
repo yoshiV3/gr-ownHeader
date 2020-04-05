@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <block>
-  <name>parse_header_b</name>
-  <key>ownHeader_parse_header_b</key>
+  <name>send_to_multiplexer_b</name>
+  <key>ownHeader_send_to_multiplexer_b</key>
   <category>[ownHeader]</category>
   <import>import ownHeader</import>
-  <make>ownHeader.parse_header_b()</make>
+  <make>ownHeader.send_to_multiplexer_b()</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name

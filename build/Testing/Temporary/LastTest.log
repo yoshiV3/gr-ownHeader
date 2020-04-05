@@ -1,10 +1,47 @@
-Start testing: Apr 03 03:38 CEST
+Start testing: Apr 04 18:49 CEST
 ----------------------------------------------------------
-2/2 Testing: qa_append_header_bb
-2/2 Test: qa_append_header_bb
+1/3 Testing: test_ownHeader
+1/3 Test: test_ownHeader
+Command: "/bin/sh" "/home/yoshi/gr-ownHeader/build/lib/test_ownHeader_test.sh"
+Directory: /home/yoshi/gr-ownHeader/build/lib
+"test_ownHeader" start time: Apr 04 18:49 CEST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_ownHeader" end time: Apr 04 18:49 CEST
+"test_ownHeader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: qa_append_header_bb
+2/3 Test: qa_append_header_bb
 Command: "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_append_header_bb_test.sh"
 Directory: /home/yoshi/gr-ownHeader/build/python
-"qa_append_header_bb" start time: Apr 03 03:38 CEST
+"qa_append_header_bb" start time: Apr 04 18:49 CEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"qa_append_header_bb" end time: Apr 04 18:49 CEST
+"qa_append_header_bb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: qa_generate_header_bb
+3/3 Test: qa_generate_header_bb
+Command: "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_generate_header_bb_test.sh"
+Directory: /home/yoshi/gr-ownHeader/build/python
+"qa_generate_header_bb" start time: Apr 04 18:49 CEST
 Output:
 ----------------------------------------------------------
 .
@@ -13,11 +50,11 @@ Ran 1 test in 0.001s
 
 OK
 <end of output>
-Test time =   0.54 sec
+Test time =   0.45 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_append_header_bb" end time: Apr 03 03:38 CEST
-"qa_append_header_bb" time elapsed: 00:00:00
+"qa_generate_header_bb" end time: Apr 04 18:49 CEST
+"qa_generate_header_bb" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 03 03:38 CEST
+End testing: Apr 04 18:49 CEST

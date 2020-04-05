@@ -24,12 +24,11 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND ownHeader_sources
     append_header_bb_impl.cc
-    parse_header_b_impl.cc
     generate_header_bb_impl.cc
-)
+    parse_header_bb_impl.cc
+    send_to_multiplexer_b_impl.cc )
 
 set(ownHeader_sources "${ownHeader_sources}" PARENT_SCOPE)
 if(NOT ownHeader_sources)

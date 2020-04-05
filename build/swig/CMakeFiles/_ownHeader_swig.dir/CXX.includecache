@@ -18,6 +18,12 @@ gnuradio/tagged_stream_block.h
 gnuradio/block.h
 -
 
+../include/ownHeader/generate_header_bb.h
+ownHeader/api.h
+-
+gnuradio/tagged_stream_block.h
+-
+
 /home/yoshi/gr-ownHeader/build/swig/ownHeader_swigPYTHON_wrap.cxx
 Python.h
 -
@@ -67,6 +73,8 @@ limits.h
 -
 ownHeader/append_header_bb.h
 /home/yoshi/gr-ownHeader/build/swig/ownHeader/append_header_bb.h
+ownHeader/generate_header_bb.h
+/home/yoshi/gr-ownHeader/build/swig/ownHeader/generate_header_bb.h
 float.h
 -
 math.h

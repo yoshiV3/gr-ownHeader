@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2020 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2020 Yoshi Vermeire 
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,8 +19,8 @@
  */
 
 
-#ifndef INCLUDED_OWNHEADER_GENERATE_HEADER_BB_H
-#define INCLUDED_OWNHEADER_GENERATE_HEADER_BB_H
+#ifndef INCLUDED_OWNHEADER_PARSE_HEADER_BB_H
+#define INCLUDED_OWNHEADER_PARSE_HEADER_BB_H
 
 #include <ownHeader/api.h>
 #include <gnuradio/tagged_stream_block.h>
@@ -33,24 +33,26 @@ namespace gr {
      * \ingroup ownHeader
      *
      */
-    class OWNHEADER_API generate_header_bb : virtual public gr::tagged_stream_block
+    class OWNHEADER_API parse_header_bb : virtual public gr::tagged_stream_block
     {
      public:
-      typedef boost::shared_ptr<generate_header_bb> sptr;
+      typedef boost::shared_ptr<parse_header_bb> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of ownHeader::generate_header_bb.
+       * \brief Return a shared_ptr to a new instance of ownHeader::parse_header_bb.
        *
-       * To avoid accidental use of raw pointers, ownHeader::generate_header_bb's
+       * To avoid accidental use of raw pointers, ownHeader::parse_header_bb's
        * constructor is in a private implementation
-       * class. ownHeader::generate_header_bb::make is the public interface for
+       * class. ownHeader::parse_header_bb::make is the public interface for
        * creating new instances.
        */
-      static sptr make(const std::string& len_tag_key="packet_len");
+      static sptr make(const std::string& tag_len_key ="packet_len", const std::string & frame_len_key="frame_len",
+		      unsigned char max_symbol=1, unsigned char own_id=1,
+		      unsigned char max_padding=0);
     };
 
   } // namespace ownHeader
 } // namespace gr
 
-#endif /* INCLUDED_OWNHEADER_GENERATE_HEADER_BB_H */
+#endif /* INCLUDED_OWNHEADER_PARSE_HEADER_BB_H */
 

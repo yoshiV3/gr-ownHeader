@@ -18,33 +18,31 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_OWNHEADER_PARSE_HEADER_B_IMPL_H
-#define INCLUDED_OWNHEADER_PARSE_HEADER_B_IMPL_H
+#ifndef INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_IMPL_H
+#define INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_IMPL_H
 
-#include <ownHeader/parse_header_b.h>
+#include <ownHeader/send_to_multiplexer_b.h>
 
 namespace gr {
   namespace ownHeader {
 
-    class parse_header_b_impl : public parse_header_b
+    class send_to_multiplexer_b_impl : public send_to_multiplexer_b
     {
      private:
       // Nothing to declare in this block.
 
      public:
-      parse_header_b_impl();
-      ~parse_header_b_impl();
+      send_to_multiplexer_b_impl();
+      ~send_to_multiplexer_b_impl();
 
-      int calculate_output_stream_length(const gr_vector_int &ninput_items)
-
+      // Where all the action really happens
       int work(int noutput_items,
-           gr_vector_int &ninput_items,		      
-           gr_vector_const_void_star &input_items,
-           gr_vector_void_star &output_items);
+         gr_vector_const_void_star &input_items,
+         gr_vector_void_star &output_items);
     };
 
   } // namespace ownHeader
 } // namespace gr
 
-#endif /* INCLUDED_OWNHEADER_PARSE_HEADER_B_IMPL_H */
+#endif /* INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_IMPL_H */
 

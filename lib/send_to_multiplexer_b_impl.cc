@@ -23,53 +23,42 @@
 #endif
 
 #include <gnuradio/io_signature.h>
-#include "parse_header_b_impl.h"
+#include "send_to_multiplexer_b_impl.h"
 
 namespace gr {
   namespace ownHeader {
 
-    parse_header_b::sptr
-    parse_header_b::make(const std::string & len_tag_key)
+    send_to_multiplexer_b::sptr
+    send_to_multiplexer_b::make()
     {
       return gnuradio::get_initial_sptr
-        (new parse_header_b_impl(len_tag_key));
+        (new send_to_multiplexer_b_impl());
     }
 
     /*
      * The private constructor
      */
-    parse_header_b_impl::parse_header_b_impl()
-      : gr::tagged_stream_block("parse_header_b",
-              gr::io_signature::make(1, 1, sizeof(char)),
-              gr::io_signature::make(1, 1, sizeof(char)))
+    send_to_multiplexer_b_impl::send_to_multiplexer_b_impl()
+      : gr::sync_block("send_to_multiplexer_b",
+              gr::io_signature::make(<+MIN_IN+>, <+MAX_IN+>, sizeof(<+ITYPE+>)),
+              gr::io_signature::make(0, 0, 0))
     {}
 
     /*
      * Our virtual destructor.
      */
-    parse_header_b_impl::~parse_header_b_impl()
+    send_to_multiplexer_b_impl::~send_to_multiplexer_b_impl()
     {
     }
 
     int
-    parse_header_b_impl::calculate_output_stream_length ( const gr_vector_int &ninput_items)
+    send_to_multiplexer_b_impl::work(int noutput_items,
+        gr_vector_const_void_star &input_items,
+        gr_vector_void_star &output_items)
     {
-		return 0; 
-    }
-
-    int
-    parse_header_b_impl::work (int noutput_items,
-                       gr_vector_int &ninput_items,
-                       gr_vector_const_void_star &input_items,
-                       gr_vector_void_star &output_items)
-    {
-      const unsigned char *in = (const unsigned char *) input_items[0];
-
+      const <+ITYPE+> *in = (const <+ITYPE+> *) input_items[0];
 
       // Do <+signal processing+>
-      // Tell runtime system how many input items we consumed on
-      // each input stream.
-      consume_each (noutput_items);
 
       // Tell runtime system how many output items we produced.
       return noutput_items;

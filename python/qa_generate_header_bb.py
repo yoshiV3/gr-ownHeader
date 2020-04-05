@@ -22,6 +22,7 @@
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import ownHeader_swig as ownHeader
+import pmt
 
 
 
@@ -80,16 +81,15 @@ class qa_generate_header_bb (gr_unittest.TestCase):
         src_tags = make_tags(0) 
         source = blocks.vector_source_b(src_data,repeat = False, tags = src_tags)        
         dest   = blocks.tsb_vector_sink_b(tsb_key="packet_len")
-        header = ownHeader.append_header_bb("packet_len")
+        header = ownHeader.generate_header_bb("packet_len")
         self.tb.connect(source,header,dest)
         self.tb.run ()
 
         result_data = dest.data()[0]
 
         self.assertEqual(len(result_data),6)
-        self.assertEqual(result_data, tuple([1,1,1,0,0,0])
+        self.assertEqual(result_data, tuple([1,1,1,0,0,0]))
         # check data
-
 
 if __name__ == '__main__':
     gr_unittest.run(qa_generate_header_bb, "qa_generate_header_bb.xml")

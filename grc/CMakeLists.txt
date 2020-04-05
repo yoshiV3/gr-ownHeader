@@ -16,9 +16,9 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     ownHeader_append_header_bb.xml
-    ownHeader_parse_header_b.xml
-    ownHeader_generate_header_bb.xml DESTINATION share/gnuradio/grc/blocks
+    ownHeader_generate_header_bb.xml
+    ownHeader_parse_header_bb.xml
+    ownHeader_send_to_multiplexer_b.xml DESTINATION share/gnuradio/grc/blocks
 )

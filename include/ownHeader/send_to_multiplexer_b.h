@@ -19,11 +19,11 @@
  */
 
 
-#ifndef INCLUDED_OWNHEADER_PARSE_HEADER_B_H
-#define INCLUDED_OWNHEADER_PARSE_HEADER_B_H
+#ifndef INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_H
+#define INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_H
 
 #include <ownHeader/api.h>
-#include <gnuradio/block.h>
+#include <gnuradio/sync_block.h>
 
 namespace gr {
   namespace ownHeader {
@@ -33,24 +33,24 @@ namespace gr {
      * \ingroup ownHeader
      *
      */
-    class OWNHEADER_API parse_header_b : virtual public gr::tagged_stream_block
+    class OWNHEADER_API send_to_multiplexer_b : virtual public gr::sync_block
     {
      public:
-      typedef boost::shared_ptr<parse_header_b> sptr;
+      typedef boost::shared_ptr<send_to_multiplexer_b> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of ownHeader::parse_header_b.
+       * \brief Return a shared_ptr to a new instance of ownHeader::send_to_multiplexer_b.
        *
-       * To avoid accidental use of raw pointers, ownHeader::parse_header_b's
+       * To avoid accidental use of raw pointers, ownHeader::send_to_multiplexer_b's
        * constructor is in a private implementation
-       * class. ownHeader::parse_header_b::make is the public interface for
+       * class. ownHeader::send_to_multiplexer_b::make is the public interface for
        * creating new instances.
        */
-      static sptr make(const std::string& len_tag_key);
+      static sptr make();
     };
 
   } // namespace ownHeader
 } // namespace gr
 
-#endif /* INCLUDED_OWNHEADER_PARSE_HEADER_B_H */
+#endif /* INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_H */
 

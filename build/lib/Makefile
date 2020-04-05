@@ -224,6 +224,60 @@ append_header_bb_impl.cc.s:
 	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.s
 .PHONY : append_header_bb_impl.cc.s
 
+generate_header_bb_impl.o: generate_header_bb_impl.cc.o
+
+.PHONY : generate_header_bb_impl.o
+
+# target to build an object file
+generate_header_bb_impl.cc.o:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o
+.PHONY : generate_header_bb_impl.cc.o
+
+generate_header_bb_impl.i: generate_header_bb_impl.cc.i
+
+.PHONY : generate_header_bb_impl.i
+
+# target to preprocess a source file
+generate_header_bb_impl.cc.i:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.i
+.PHONY : generate_header_bb_impl.cc.i
+
+generate_header_bb_impl.s: generate_header_bb_impl.cc.s
+
+.PHONY : generate_header_bb_impl.s
+
+# target to generate assembly for a file
+generate_header_bb_impl.cc.s:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.s
+.PHONY : generate_header_bb_impl.cc.s
+
+parse_header_bb_impl.o: parse_header_bb_impl.cc.o
+
+.PHONY : parse_header_bb_impl.o
+
+# target to build an object file
+parse_header_bb_impl.cc.o:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o
+.PHONY : parse_header_bb_impl.cc.o
+
+parse_header_bb_impl.i: parse_header_bb_impl.cc.i
+
+.PHONY : parse_header_bb_impl.i
+
+# target to preprocess a source file
+parse_header_bb_impl.cc.i:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.i
+.PHONY : parse_header_bb_impl.cc.i
+
+parse_header_bb_impl.s: parse_header_bb_impl.cc.s
+
+.PHONY : parse_header_bb_impl.s
+
+# target to generate assembly for a file
+parse_header_bb_impl.cc.s:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.s
+.PHONY : parse_header_bb_impl.cc.s
+
 qa_ownHeader.o: qa_ownHeader.cc.o
 
 .PHONY : qa_ownHeader.o
@@ -250,6 +304,33 @@ qa_ownHeader.s: qa_ownHeader.cc.s
 qa_ownHeader.cc.s:
 	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/test-ownHeader.dir/build.make lib/CMakeFiles/test-ownHeader.dir/qa_ownHeader.cc.s
 .PHONY : qa_ownHeader.cc.s
+
+send_to_multiplexer_b_impl.o: send_to_multiplexer_b_impl.cc.o
+
+.PHONY : send_to_multiplexer_b_impl.o
+
+# target to build an object file
+send_to_multiplexer_b_impl.cc.o:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o
+.PHONY : send_to_multiplexer_b_impl.cc.o
+
+send_to_multiplexer_b_impl.i: send_to_multiplexer_b_impl.cc.i
+
+.PHONY : send_to_multiplexer_b_impl.i
+
+# target to preprocess a source file
+send_to_multiplexer_b_impl.cc.i:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.i
+.PHONY : send_to_multiplexer_b_impl.cc.i
+
+send_to_multiplexer_b_impl.s: send_to_multiplexer_b_impl.cc.s
+
+.PHONY : send_to_multiplexer_b_impl.s
+
+# target to generate assembly for a file
+send_to_multiplexer_b_impl.cc.s:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.s
+.PHONY : send_to_multiplexer_b_impl.cc.s
 
 test_ownHeader.o: test_ownHeader.cc.o
 
@@ -296,9 +377,18 @@ help:
 	@echo "... append_header_bb_impl.o"
 	@echo "... append_header_bb_impl.i"
 	@echo "... append_header_bb_impl.s"
+	@echo "... generate_header_bb_impl.o"
+	@echo "... generate_header_bb_impl.i"
+	@echo "... generate_header_bb_impl.s"
+	@echo "... parse_header_bb_impl.o"
+	@echo "... parse_header_bb_impl.i"
+	@echo "... parse_header_bb_impl.s"
 	@echo "... qa_ownHeader.o"
 	@echo "... qa_ownHeader.i"
 	@echo "... qa_ownHeader.s"
+	@echo "... send_to_multiplexer_b_impl.o"
+	@echo "... send_to_multiplexer_b_impl.i"
+	@echo "... send_to_multiplexer_b_impl.s"
 	@echo "... test_ownHeader.o"
 	@echo "... test_ownHeader.i"
 	@echo "... test_ownHeader.s"

@@ -23,6 +23,7 @@
 install(FILES
     api.h
     append_header_bb.h
-    parse_header_b.h
-    generate_header_bb.h DESTINATION include/ownHeader
+    generate_header_bb.h
+    parse_header_bb.h
+    send_to_multiplexer_b.h DESTINATION include/ownHeader
 )

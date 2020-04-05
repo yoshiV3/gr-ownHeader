@@ -81,14 +81,92 @@ lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o.provides: lib/C
 lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o
 
 
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o: lib/CMakeFiles/gnuradio-ownHeader.dir/flags.make
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o: ../lib/generate_header_bb_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoshi/gr-ownHeader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o -c /home/yoshi/gr-ownHeader/lib/generate_header_bb_impl.cc
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.i"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoshi/gr-ownHeader/lib/generate_header_bb_impl.cc > CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.i
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.s"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoshi/gr-ownHeader/lib/generate_header_bb_impl.cc -o CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.s
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.provides: lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o
+
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: lib/CMakeFiles/gnuradio-ownHeader.dir/flags.make
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: ../lib/parse_header_bb_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoshi/gr-ownHeader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o -c /home/yoshi/gr-ownHeader/lib/parse_header_bb_impl.cc
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.i"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoshi/gr-ownHeader/lib/parse_header_bb_impl.cc > CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.i
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.s"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoshi/gr-ownHeader/lib/parse_header_bb_impl.cc -o CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.s
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.provides: lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o
+
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o: lib/CMakeFiles/gnuradio-ownHeader.dir/flags.make
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o: ../lib/send_to_multiplexer_b_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoshi/gr-ownHeader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o -c /home/yoshi/gr-ownHeader/lib/send_to_multiplexer_b_impl.cc
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.i"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoshi/gr-ownHeader/lib/send_to_multiplexer_b_impl.cc > CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.i
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.s"
+	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoshi/gr-ownHeader/lib/send_to_multiplexer_b_impl.cc -o CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.s
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.provides: lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o
+
+
 # Object files for target gnuradio-ownHeader
 gnuradio__ownHeader_OBJECTS = \
-"CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o"
+"CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o" \
+"CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o" \
+"CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o" \
+"CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o"
 
 # External object files for target gnuradio-ownHeader
 gnuradio__ownHeader_EXTERNAL_OBJECTS =
 
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o
+lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o
+lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o
+lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/build.make
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -96,7 +174,7 @@ lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libgnurad
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libgnuradio-pmt.so
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/liblog4cpp.so
 lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-ownHeader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yoshi/gr-ownHeader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libgnuradio-ownHeader-1.0.0git.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yoshi/gr-ownHeader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libgnuradio-ownHeader-1.0.0git.so"
 	cd /home/yoshi/gr-ownHeader/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-ownHeader.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/yoshi/gr-ownHeader/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-ownHeader-1.0.0git.so.0.0.0 libgnuradio-ownHeader-1.0.0git.so.0.0.0 libgnuradio-ownHeader-1.0.0git.so
 	cd /home/yoshi/gr-ownHeader/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-ownHeader-1.0.0git.so.0.0.0 /home/yoshi/gr-ownHeader/build/lib/libgnuradio-ownHeader.so
@@ -112,6 +190,9 @@ lib/CMakeFiles/gnuradio-ownHeader.dir/build: lib/libgnuradio-ownHeader-1.0.0git.
 .PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/build
 
 lib/CMakeFiles/gnuradio-ownHeader.dir/requires: lib/CMakeFiles/gnuradio-ownHeader.dir/append_header_bb_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-ownHeader.dir/requires: lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-ownHeader.dir/requires: lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-ownHeader.dir/requires: lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-ownHeader.dir/requires
 

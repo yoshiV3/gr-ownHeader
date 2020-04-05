@@ -41,6 +41,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ownHeader" TYPE FILE FILES
     "/home/yoshi/gr-ownHeader/include/ownHeader/api.h"
     "/home/yoshi/gr-ownHeader/include/ownHeader/append_header_bb.h"
+    "/home/yoshi/gr-ownHeader/include/ownHeader/generate_header_bb.h"
+    "/home/yoshi/gr-ownHeader/include/ownHeader/parse_header_bb.h"
+    "/home/yoshi/gr-ownHeader/include/ownHeader/send_to_multiplexer_b.h"
     )
 endif()
 
