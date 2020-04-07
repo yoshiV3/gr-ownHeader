@@ -74,13 +74,15 @@ namespace gr {
 	      {
 		      std::vector<tag_t> tags;
 		      d_msg = pmt::make_dict();  
-		      get_tags_in_range(tags,0, nitems_read(0) + header, nitems_read(0) + header+1);
+		      get_tags_in_range(tags,0, nitems_read(0) + header, nitems_read(0) + header);
 		      for (const auto & tag: tags)
 
 		      {
+			      d_msg = P MT_T;
 			      if (tag.key != pmt::intern(d_len_tag))
-			      { 
-				    d_msg = dict_add(d_msg, tag.key, tag.value); 
+			      {
+				     d_msg = pmt::PMT_F; 
+				    // d_msg = dict_add(d_msg, tag.key, tag.value); 
 			      }
 
 		      }  

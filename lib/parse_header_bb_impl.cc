@@ -48,12 +48,12 @@ namespace gr {
       : gr::tagged_stream_block("parse_header_bb",
               gr::io_signature::make(1, 1, sizeof(char)),
               gr::io_signature::make(1, 1, sizeof(char)), len_tag_key),
-	d_frame_len_key(frame_len_key),
 	d_max_symbols(max_symbols), 
 	d_own_id(own_id), 
-	d_len_tag_key(len_tag_key),
 	d_max_padding(max_padding)
     {
+	d_frame_len_key = frame_len_key;
+   	d_len_tag_key   = len_tag_key;	
     	d_header_length = 6;
         d_out_length    = 1;
 	d_index_sym_cnt = 0;

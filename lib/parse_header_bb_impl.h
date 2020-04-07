@@ -29,8 +29,8 @@ namespace gr {
     class parse_header_bb_impl : public parse_header_bb
     {
      private:
-      const std::string & d_frame_len_key;
-      const std::string & d_len_tag_key; 
+      std::string d_frame_len_key;
+      std::string d_len_tag_key; 
       unsigned char d_own_id;
       unsigned char d_max_symbols; 
       unsigned char d_max_padding; 

@@ -22,17 +22,19 @@
 #define INCLUDED_OWNHEADER_SEND_TO_MULTIPLEXER_B_IMPL_H
 
 #include <ownHeader/send_to_multiplexer_b.h>
-
+#include <pmt/pmt.h>
 namespace gr {
   namespace ownHeader {
 
     class send_to_multiplexer_b_impl : public send_to_multiplexer_b
     {
      private:
-      // Nothing to declare in this block.
+      pmt::pmt_t d_msg; 
+      pmt::pmt_t d_port_id;
+      std::string d_len_tag; 
 
      public:
-      send_to_multiplexer_b_impl();
+      send_to_multiplexer_b_impl(const std::string & len_tag_key);
       ~send_to_multiplexer_b_impl();
 
       // Where all the action really happens

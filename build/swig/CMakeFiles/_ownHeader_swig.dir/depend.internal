@@ -5,6 +5,8 @@ swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o
  ../include/ownHeader/api.h
  ../include/ownHeader/append_header_bb.h
  ../include/ownHeader/generate_header_bb.h
+ ../include/ownHeader/parse_header_bb.h
+ ../include/ownHeader/send_to_multiplexer_b.h
  /home/yoshi/gr-ownHeader/build/swig/ownHeader_swigPYTHON_wrap.cxx
  /usr/include/gnuradio/swig/gnuradio_swig_bug_workaround.h
  /usr/include/python2.7/Python.h

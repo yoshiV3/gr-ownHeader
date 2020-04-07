@@ -46,7 +46,7 @@ namespace gr {
        * class. ownHeader::send_to_multiplexer_b::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(const std::string & tag_len_key="packet_len");
     };
 
   } // namespace ownHeader

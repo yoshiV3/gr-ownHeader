@@ -42,7 +42,12 @@ def make_tags(len_tag_key):
     tag4.key    = pmt.intern(len_tag_key)
     tag4.value  = pmt.from_long(6)
     tag4.offset = 18
-    return tuple([tag1,tag2,tag3,tag4])
+    tag5        = gr.tag_t()
+    tag5.key    = pmt.intern("foo")
+    tag5.value  = pmt.from_long(6)
+    tag5.offset = 0
+ 
+    return tuple([tag1,tag2,tag3,tag4, tag5])
  
     
 
@@ -55,29 +60,29 @@ class qa_parse_header_bb (gr_unittest.TestCase):
         self.tb = None
 
     def test_001_t (self):
-        len_tag_key       ="packet_len"
-        len_frame_tag_key = "frame_len"
+        len_tag_key       = "packet_len"
+        len_frame_tag_key = "frame_length"
         maxS              = 3
         ownID             = 2
         maxPad            = 1
-        header_one        = [1,0,1,2,0,0]
+        header_one        = [2,0,1,2,0,0]
         header_two        = [100,1,1,2,0,0] #too long
         header_three      = [1,2,1,3,0,0]  #wrong receiver 
         header_four       = [1,0,1,2,10,0] #too much padding 
-        scr_data          = header_one + header_two + header_three + header_four
-        src_tags          = make_tags()
-        src               = blocks.vector_source_b(src_data, repeat == False, tags = src_tags)
-        parser            = ownHeader.parse_header_bb(len_tag_key,frame_len,  maxS, ownID, maxPad)
-        dest              = blocks.tsb_vector_sink_b(tag_len_key)
+        src_data          = header_one + header_two + header_three + header_four
+        src_tags          = make_tags(len_tag_key)
+        src               = blocks.vector_source_b(src_data, repeat = False, tags = src_tags)
+        parser            = ownHeader.parse_header_bb(len_tag_key,len_frame_tag_key,  maxS, ownID, maxPad)
+        dest              = blocks.tsb_vector_sink_b(1,len_tag_key)
         self.tb.connect(src,parser,dest)
         self.tb.run ()
         dest_data = dest.data()
         dest_tags = dest.tags()
 
         self.assertEqual(len(dest_data),4)
-        self.assertEqual(dest_data, tuple([1,0,0,0]))
+        self.assertEqual(dest_data, ((1,),(0,),(0,),(0,),))
         tags = [gr.tag_to_python(x) for x in dest_tags]
-        self.assertEqual(len(tags),10)
+        self.assertEqual(len(tags),6)
         zero  = []
         one   = []
         two   = []
@@ -91,11 +96,7 @@ class qa_parse_header_bb (gr_unittest.TestCase):
                 two.append(tag)
             else :
                 three.append(tag)
-       self.assertEqual(len(zero),7)
-       self.assertEqual(len(one),1)
-       self.assertEqual(len(two),1)
-       self.assertEqual(len(three),1)
-
+        self.assertEqual(len(zero),6)
         # check data
 
 

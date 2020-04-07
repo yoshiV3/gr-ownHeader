@@ -4,6 +4,8 @@
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: ../include/ownHeader/api.h
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: ../include/ownHeader/append_header_bb.h
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: ../include/ownHeader/generate_header_bb.h
+swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: ../include/ownHeader/parse_header_bb.h
+swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: ../include/ownHeader/send_to_multiplexer_b.h
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: swig/ownHeader_swigPYTHON_wrap.cxx
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: /usr/include/gnuradio/swig/gnuradio_swig_bug_workaround.h
 swig/CMakeFiles/_ownHeader_swig.dir/ownHeader_swigPYTHON_wrap.cxx.o: /usr/include/python2.7/Python.h

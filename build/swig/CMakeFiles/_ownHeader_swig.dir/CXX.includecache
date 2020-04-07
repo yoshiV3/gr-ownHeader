@@ -24,6 +24,18 @@ ownHeader/api.h
 gnuradio/tagged_stream_block.h
 -
 
+../include/ownHeader/parse_header_bb.h
+ownHeader/api.h
+-
+gnuradio/tagged_stream_block.h
+-
+
+../include/ownHeader/send_to_multiplexer_b.h
+ownHeader/api.h
+-
+gnuradio/sync_block.h
+-
+
 /home/yoshi/gr-ownHeader/build/swig/ownHeader_swigPYTHON_wrap.cxx
 Python.h
 -
@@ -75,6 +87,10 @@ ownHeader/append_header_bb.h
 /home/yoshi/gr-ownHeader/build/swig/ownHeader/append_header_bb.h
 ownHeader/generate_header_bb.h
 /home/yoshi/gr-ownHeader/build/swig/ownHeader/generate_header_bb.h
+ownHeader/parse_header_bb.h
+/home/yoshi/gr-ownHeader/build/swig/ownHeader/parse_header_bb.h
+ownHeader/send_to_multiplexer_b.h
+/home/yoshi/gr-ownHeader/build/swig/ownHeader/send_to_multiplexer_b.h
 float.h
 -
 math.h
