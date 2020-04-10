@@ -109,7 +109,7 @@ namespace gr {
 		     get_tags_in_range(tags, 0, nitems_read(0), nitems_read(0) + d_header_length);
 		     for (unsigned t =0; t < tags.size(); t++)
 		     {
-			     if (tags[t].key != pmt::intern(d_len_tag_key))
+			     if (!pmt::equal(tags[t].key, pmt::intern(d_frame_len_key)))
 			     {
 			    	 tags[t].offset = nitems_written(0); 
 			   	  add_item_tag(0,tags[t]) ;
@@ -119,23 +119,23 @@ namespace gr {
 		     add_item_tag(0,
 				  nitems_written(0),
 				  pmt::intern(d_frame_len_key), 
-				  pmt::from_uint64( (uint64_t) in[d_index_sym_cnt]));
+				  pmt::from_long( (long int) in[d_index_sym_cnt]));
    		     add_item_tag(0,
 				  nitems_written(0),
 	     			  pmt::intern(std::string ("sequence_number")), 
-				  pmt::from_uint64( (uint64_t) in[d_index_seq_num])); 
+				  pmt::from_long( (long int) in[d_index_seq_num])); 
 		     add_item_tag(0,
    				  nitems_written(0), 
      				  pmt::intern(std::string ("sender_id")),
-				  pmt::from_uint64( (uint64_t) in[d_index_send_id]));
+				  pmt::from_long( (long int) in[d_index_send_id]));
 		     add_item_tag(0,
 			          nitems_written(0),
 	     			  pmt::intern(std::string ("padding")),
-				  pmt::from_uint64( (uint64_t) in[d_index_pad_cnt]));
+				  pmt::from_long( (long int) in[d_index_pad_cnt]));
 		    add_item_tag(0,
 	       			 nitems_written(0),
      				 pmt::intern(std::string ("mode")),
-				 pmt::from_uint64( (uint64_t)	in[d_index_mode]));			 
+				 pmt::from_long(( long int )	in[d_index_mode]));			 
 	      }
 	      else 
 	      {

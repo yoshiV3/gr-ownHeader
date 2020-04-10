@@ -1,38 +1,45 @@
-<?xml version="1.0"?>
 <block>
-  <name>parse_header_bb</name>
+  <name>Parse header bb</name>
   <key>ownHeader_parse_header_bb</key>
-  <category>[ownHeader]</category>
+  <category>[OWNHEADER]</category>
   <import>import ownHeader</import>
-  <make>ownHeader.parse_header_bb()</make>
-  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
-       Sub-nodes:
-       * name
-       * key (makes the value accessible as $keyname, e.g. in the make node)
-       * type -->
+  <make>ownHeader.parse_header_bb($tag_len_key, $frame_len_key, $max_symbol, $own_id, $max_padding)</make>
   <param>
-    <name>...</name>
-    <key>...</key>
-    <type>...</type>
+    <name>Tag_len_key</name>
+    <key>tag_len_key</key>
+    <value>"packet_len"</value>
+    <type>string</type>
   </param>
-
-  <!-- Make one 'sink' node per input. Sub-nodes:
-       * name (an identifier for the GUI)
-       * type
-       * vlen
-       * optional (set to 1 for optional inputs) -->
+  <param>
+    <name>Frame_len_key</name>
+    <key>frame_len_key</key>
+    <value>"frame_len"</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Max_symbol</name>
+    <key>max_symbol</key>
+    <value>1</value>
+    <type>byte</type>
+  </param>
+  <param>
+    <name>Own_id</name>
+    <key>own_id</key>
+    <value>1</value>
+    <type>byte</type>
+  </param>
+  <param>
+    <name>Max_padding</name>
+    <key>max_padding</key>
+    <value>0</value>
+    <type>byte</type>
+  </param>
   <sink>
     <name>in</name>
-    <type><!-- e.g. int, float, complex, byte, short, xxx_vector, ...--></type>
+    <type>byte</type>
   </sink>
-
-  <!-- Make one 'source' node per output. Sub-nodes:
-       * name (an identifier for the GUI)
-       * type
-       * vlen
-       * optional (set to 1 for optional inputs) -->
   <source>
     <name>out</name>
-    <type><!-- e.g. int, float, complex, byte, short, xxx_vector, ...--></type>
+    <type>byte</type>
   </source>
 </block>

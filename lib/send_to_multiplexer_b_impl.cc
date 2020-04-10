@@ -78,7 +78,7 @@ namespace gr {
 		      for (const auto & tag: tags)
 
 		      {
-			      if (tag.key != pmt::intern(d_len_tag))
+			      if (!pmt::equal(tag.key , pmt::intern(d_len_tag)))
 			      { 
 				    d_msg = dict_add(d_msg, tag.key, tag.value); 
 			      }

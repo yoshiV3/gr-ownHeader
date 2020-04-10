@@ -24,8 +24,12 @@ from gnuradio import blocks
 import ownHeader_swig as ownHeader
 import pmt 
 
-def make_tags(len_tag_key):
-    tags        = []
+def make_tags(len_tag_key,len_frame_tag_key):
+    debug_tag         = gr.tag_t()
+    debug_tag.key     = pmt.intern(len_frame_tag_key)
+    debug_tag.value   = pmt.from_long(400)
+    debug_tag.offset  = 0
+    tags        = [debug_tag]
     tag1        = gr.tag_t()
     tag1.key    = pmt.intern(len_tag_key)
     tag1.value  = pmt.from_long(6)
@@ -70,7 +74,7 @@ class qa_parse_header_bb (gr_unittest.TestCase):
         header_three      = [1,2,1,3,0,0]  #wrong receiver 
         header_four       = [1,0,1,2,10,0] #too much padding 
         src_data          = header_one + header_two + header_three + header_four
-        src_tags          = make_tags(len_tag_key)
+        src_tags          = make_tags(len_tag_key, len_frame_tag_key)
         src               = blocks.vector_source_b(src_data, repeat = False, tags = src_tags)
         parser            = ownHeader.parse_header_bb(len_tag_key,len_frame_tag_key,  maxS, ownID, maxPad)
         dest              = blocks.tsb_vector_sink_b(1,len_tag_key)

@@ -1,7 +1,7 @@
-test_ownHeader 24 0.00291512
-qa_append_header_bb 20 0.0225275
+test_ownHeader 31 0.00165925
+qa_append_header_bb 27 0.0160947
 qa_parse_header_b 5 0
-qa_generate_header_bb 17 0.0258077
-qa_parse_header_bb 13 0.0318788
-qa_send_to_multiplexer_b 17 0.0555112
+qa_generate_header_bb 24 0.016849
+qa_parse_header_bb 20 0.0199142
+qa_send_to_multiplexer_b 24 0.039593
 ---
