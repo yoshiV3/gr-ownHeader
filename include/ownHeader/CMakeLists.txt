@@ -25,5 +25,7 @@ install(FILES
     append_header_bb.h
     generate_header_bb.h
     parse_header_bb.h
-    send_to_multiplexer_b.h DESTINATION include/ownHeader
+    send_to_multiplexer_b.h
+    generate_short_bb.h
+    parse_short_bb.h DESTINATION include/ownHeader
 )

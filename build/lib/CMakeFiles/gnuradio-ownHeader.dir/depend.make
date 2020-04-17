@@ -11,10 +11,20 @@ lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o: ../include/o
 lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o: ../lib/generate_header_bb_impl.cc
 lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.o: ../lib/generate_header_bb_impl.h
 
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.o: ../include/ownHeader/api.h
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.o: ../include/ownHeader/generate_short_bb.h
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.o: ../lib/generate_short_bb_impl.cc
+lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.o: ../lib/generate_short_bb_impl.h
+
 lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: ../include/ownHeader/api.h
 lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: ../include/ownHeader/parse_header_bb.h
 lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: ../lib/parse_header_bb_impl.cc
 lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.o: ../lib/parse_header_bb_impl.h
+
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.o: ../include/ownHeader/api.h
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.o: ../include/ownHeader/parse_short_bb.h
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.o: ../lib/parse_short_bb_impl.cc
+lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.o: ../lib/parse_short_bb_impl.h
 
 lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o: ../include/ownHeader/api.h
 lib/CMakeFiles/gnuradio-ownHeader.dir/send_to_multiplexer_b_impl.cc.o: ../include/ownHeader/send_to_multiplexer_b.h

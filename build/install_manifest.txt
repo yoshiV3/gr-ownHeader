@@ -4,6 +4,8 @@
 /usr/local/include/ownHeader/generate_header_bb.h
 /usr/local/include/ownHeader/parse_header_bb.h
 /usr/local/include/ownHeader/send_to_multiplexer_b.h
+/usr/local/include/ownHeader/generate_short_bb.h
+/usr/local/include/ownHeader/parse_short_bb.h
 /usr/local/lib/libgnuradio-ownHeader-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-ownHeader-1.0.0git.so
 /usr/local/lib/libgnuradio-ownHeader.so
@@ -21,3 +23,5 @@
 /usr/local/share/gnuradio/grc/blocks/ownHeader_generate_header_bb.xml
 /usr/local/share/gnuradio/grc/blocks/ownHeader_parse_header_bb.xml
 /usr/local/share/gnuradio/grc/blocks/ownHeader_send_to_multiplexer_b.xml
+/usr/local/share/gnuradio/grc/blocks/ownHeader_generate_short_bb.xml
+/usr/local/share/gnuradio/grc/blocks/ownHeader_parse_short_bb.xml

@@ -43,6 +43,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/yoshi/gr-ownHeader/grc/ownHeader_generate_header_bb.xml"
     "/home/yoshi/gr-ownHeader/grc/ownHeader_parse_header_bb.xml"
     "/home/yoshi/gr-ownHeader/grc/ownHeader_send_to_multiplexer_b.xml"
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_generate_short_bb.xml"
+    "/home/yoshi/gr-ownHeader/grc/ownHeader_parse_short_bb.xml"
     )
 endif()
 

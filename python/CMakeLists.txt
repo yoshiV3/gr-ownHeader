@@ -45,3 +45,5 @@ GR_ADD_TEST(qa_append_header_bb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}
 GR_ADD_TEST(qa_generate_header_bb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_generate_header_bb.py)
 GR_ADD_TEST(qa_parse_header_bb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_parse_header_bb.py)
 GR_ADD_TEST(qa_send_to_multiplexer_b ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_send_to_multiplexer_b.py)
+GR_ADD_TEST(qa_generate_short_bb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_generate_short_bb.py)
+GR_ADD_TEST(qa_parse_short_bb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_parse_short_bb.py)

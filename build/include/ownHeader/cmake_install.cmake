@@ -44,6 +44,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/yoshi/gr-ownHeader/include/ownHeader/generate_header_bb.h"
     "/home/yoshi/gr-ownHeader/include/ownHeader/parse_header_bb.h"
     "/home/yoshi/gr-ownHeader/include/ownHeader/send_to_multiplexer_b.h"
+    "/home/yoshi/gr-ownHeader/include/ownHeader/generate_short_bb.h"
+    "/home/yoshi/gr-ownHeader/include/ownHeader/parse_short_bb.h"
     )
 endif()
 

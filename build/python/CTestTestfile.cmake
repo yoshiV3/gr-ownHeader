@@ -8,3 +8,5 @@ add_test(qa_append_header_bb "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa
 add_test(qa_generate_header_bb "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_generate_header_bb_test.sh")
 add_test(qa_parse_header_bb "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_parse_header_bb_test.sh")
 add_test(qa_send_to_multiplexer_b "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_send_to_multiplexer_b_test.sh")
+add_test(qa_generate_short_bb "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_generate_short_bb_test.sh")
+add_test(qa_parse_short_bb "/bin/sh" "/home/yoshi/gr-ownHeader/build/python/qa_parse_short_bb_test.sh")

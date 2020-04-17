@@ -24,7 +24,19 @@ ownHeader/api.h
 gnuradio/tagged_stream_block.h
 -
 
+../include/ownHeader/generate_short_bb.h
+ownHeader/api.h
+-
+gnuradio/tagged_stream_block.h
+-
+
 ../include/ownHeader/parse_header_bb.h
+ownHeader/api.h
+-
+gnuradio/tagged_stream_block.h
+-
+
+../include/ownHeader/parse_short_bb.h
 ownHeader/api.h
 -
 gnuradio/tagged_stream_block.h
@@ -91,6 +103,10 @@ ownHeader/parse_header_bb.h
 /home/yoshi/gr-ownHeader/build/swig/ownHeader/parse_header_bb.h
 ownHeader/send_to_multiplexer_b.h
 /home/yoshi/gr-ownHeader/build/swig/ownHeader/send_to_multiplexer_b.h
+ownHeader/generate_short_bb.h
+/home/yoshi/gr-ownHeader/build/swig/ownHeader/generate_short_bb.h
+ownHeader/parse_short_bb.h
+/home/yoshi/gr-ownHeader/build/swig/ownHeader/parse_short_bb.h
 float.h
 -
 math.h

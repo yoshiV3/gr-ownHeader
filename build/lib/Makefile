@@ -251,6 +251,33 @@ generate_header_bb_impl.cc.s:
 	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_header_bb_impl.cc.s
 .PHONY : generate_header_bb_impl.cc.s
 
+generate_short_bb_impl.o: generate_short_bb_impl.cc.o
+
+.PHONY : generate_short_bb_impl.o
+
+# target to build an object file
+generate_short_bb_impl.cc.o:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.o
+.PHONY : generate_short_bb_impl.cc.o
+
+generate_short_bb_impl.i: generate_short_bb_impl.cc.i
+
+.PHONY : generate_short_bb_impl.i
+
+# target to preprocess a source file
+generate_short_bb_impl.cc.i:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.i
+.PHONY : generate_short_bb_impl.cc.i
+
+generate_short_bb_impl.s: generate_short_bb_impl.cc.s
+
+.PHONY : generate_short_bb_impl.s
+
+# target to generate assembly for a file
+generate_short_bb_impl.cc.s:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/generate_short_bb_impl.cc.s
+.PHONY : generate_short_bb_impl.cc.s
+
 parse_header_bb_impl.o: parse_header_bb_impl.cc.o
 
 .PHONY : parse_header_bb_impl.o
@@ -277,6 +304,33 @@ parse_header_bb_impl.s: parse_header_bb_impl.cc.s
 parse_header_bb_impl.cc.s:
 	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_header_bb_impl.cc.s
 .PHONY : parse_header_bb_impl.cc.s
+
+parse_short_bb_impl.o: parse_short_bb_impl.cc.o
+
+.PHONY : parse_short_bb_impl.o
+
+# target to build an object file
+parse_short_bb_impl.cc.o:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.o
+.PHONY : parse_short_bb_impl.cc.o
+
+parse_short_bb_impl.i: parse_short_bb_impl.cc.i
+
+.PHONY : parse_short_bb_impl.i
+
+# target to preprocess a source file
+parse_short_bb_impl.cc.i:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.i
+.PHONY : parse_short_bb_impl.cc.i
+
+parse_short_bb_impl.s: parse_short_bb_impl.cc.s
+
+.PHONY : parse_short_bb_impl.s
+
+# target to generate assembly for a file
+parse_short_bb_impl.cc.s:
+	cd /home/yoshi/gr-ownHeader/build && $(MAKE) -f lib/CMakeFiles/gnuradio-ownHeader.dir/build.make lib/CMakeFiles/gnuradio-ownHeader.dir/parse_short_bb_impl.cc.s
+.PHONY : parse_short_bb_impl.cc.s
 
 qa_ownHeader.o: qa_ownHeader.cc.o
 
@@ -380,9 +434,15 @@ help:
 	@echo "... generate_header_bb_impl.o"
 	@echo "... generate_header_bb_impl.i"
 	@echo "... generate_header_bb_impl.s"
+	@echo "... generate_short_bb_impl.o"
+	@echo "... generate_short_bb_impl.i"
+	@echo "... generate_short_bb_impl.s"
 	@echo "... parse_header_bb_impl.o"
 	@echo "... parse_header_bb_impl.i"
 	@echo "... parse_header_bb_impl.s"
+	@echo "... parse_short_bb_impl.o"
+	@echo "... parse_short_bb_impl.i"
+	@echo "... parse_short_bb_impl.s"
 	@echo "... qa_ownHeader.o"
 	@echo "... qa_ownHeader.i"
 	@echo "... qa_ownHeader.s"

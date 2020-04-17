@@ -20,5 +20,7 @@ install(FILES
     ownHeader_append_header_bb.xml
     ownHeader_generate_header_bb.xml
     ownHeader_parse_header_bb.xml
-    ownHeader_send_to_multiplexer_b.xml DESTINATION share/gnuradio/grc/blocks
+    ownHeader_send_to_multiplexer_b.xml
+    ownHeader_generate_short_bb.xml
+    ownHeader_parse_short_bb.xml DESTINATION share/gnuradio/grc/blocks
 )
